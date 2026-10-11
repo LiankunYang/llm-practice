@@ -60,13 +60,60 @@ def answer_question(records, question, keyword, client):
     return ask_model(question, context, client)
 
 
+def load_embedder(model_dir=None):
+    from pathlib import Path
+    from sentence_transformers import SentenceTransformer
+
+    if model_dir is None:
+        model_dir = Path(__file__).resolve().parent / "bge_small_local"
+        if not (model_dir / "model.safetensors").exists():
+            from modelscope import snapshot_download
+
+            model_dir = snapshot_download(
+                "AI-ModelScope/bge-small-zh-v1.5",
+                local_dir=str(model_dir),
+                allow_patterns=["*.json", "*.txt", "*.safetensors", "1_Pooling/*"],
+            )
+    return SentenceTransformer(str(model_dir), device="cpu", local_files_only=True)
+
+
+def semantic_search(records, question, model, doc_vectors, top_k=2):
+    from sentence_transformers import util
+
+    if not records or top_k < 1:
+        return []
+    instruction = "为这个句子生成表示以用于检索相关文章："
+    query_vectors = model.encode([instruction + question], normalize_embeddings=True)
+    results = util.semantic_search(query_vectors, doc_vectors, top_k=min(top_k, len(records)))
+    return results[0]
+
+
+def get_records(records, hits):
+    matches = []
+    for hit in hits:
+        matches.append(records[hit["corpus_id"]])
+    return matches
+
+
 if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--preview", action="store_true", help="只看检索结果，不请求模型")
+    parser.add_argument("--semantic", action="store_true", help="用 BGE 检索段落，不请求 DeepSeek")
     args = parser.parse_args()
-    if args.preview:
+    if args.semantic:
+        model = load_embedder()
+        doc_vectors = model.encode([r["text"] for r in records], normalize_embeddings=True)
+        print("文档向量形状：", doc_vectors.shape)
+        questions = ["过滤网多久维护一次？", "机器太热应该怎么处理？",
+                     "水泵密封多久检查一次？", "设备的生产厂家是谁？"]
+        for question in questions:
+            print("\n问题：", question)
+            hits = semantic_search(records, question, model, doc_vectors)
+            for hit, record in zip(hits, get_records(records, hits)):
+                print(f"{hit['score']:.4f} | {record['source']} | {record['text']}")
+    elif args.preview:
         print(build_context(find_records(records, "风机")))
         print("用‘过滤网’检索：", find_records(records, "过滤网"))
     else:

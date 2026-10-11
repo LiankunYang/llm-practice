@@ -1,2 +1,5 @@
 openai==3.28.0
 ipykernel>=6,<8
+sentence-transformers==6.1.0
+transformers==5.19.0
+modelscope==1.40.2
