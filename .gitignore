@@ -7,3 +7,9 @@ __pycache__/
 bge_small_local/
 practice_documents05/
 llm06_test_results.json
+public_manual/source_docs/
+public_manual/bge_small_local/
+public_manual/results/llm07_first5.json
+public_manual/results/llm07_remaining10.json
+public_manual/results/partial_results.json
+public_manual/results/custom_result.json

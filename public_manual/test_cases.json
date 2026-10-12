@@ -1,0 +1,118 @@
+[
+  {
+    "id": "R01",
+    "question": "手册中输出电压的出厂默认设置是多少？",
+    "expected": "230 VAC",
+    "expected_pages": [
+      15
+    ]
+  },
+  {
+    "id": "R02",
+    "question": "输出电压允许选择哪些值？",
+    "expected": "220/230/240 VAC",
+    "expected_pages": [
+      15
+    ]
+  },
+  {
+    "id": "R03",
+    "question": "声音报警出厂时是开启还是关闭？",
+    "expected": "启用",
+    "expected_pages": [
+      15
+    ]
+  },
+  {
+    "id": "R04",
+    "question": "绿色或高效率模式默认开启吗？",
+    "expected": "禁用",
+    "expected_pages": [
+      15
+    ]
+  },
+  {
+    "id": "R05",
+    "question": "输出电压的出厂默认设置是不是110V？",
+    "expected": "纠正为230 VAC",
+    "expected_pages": [
+      15
+    ]
+  },
+  {
+    "id": "R06",
+    "question": "手册说PowerChute可以安装在32位系统上吗？",
+    "expected": "不可以；64位应用",
+    "expected_pages": [
+      11
+    ]
+  },
+  {
+    "id": "R07",
+    "question": "RS232和USB是否可以同时用于通信？",
+    "expected": "不可同时使用",
+    "expected_pages": [
+      11
+    ]
+  },
+  {
+    "id": "R08",
+    "question": "手册给出的PowerChute软件下载网址是什么？",
+    "expected": "www.apc.com/pcss",
+    "expected_pages": [
+      11
+    ]
+  },
+  {
+    "id": "R09",
+    "question": "事件日志最多记录最后多少个事件？",
+    "expected": "10",
+    "expected_pages": [
+      16
+    ]
+  },
+  {
+    "id": "R10",
+    "question": "显示的剩余电池运行时间使用什么单位？",
+    "expected": "分钟",
+    "expected_pages": [
+      14
+    ]
+  },
+  {
+    "id": "R11",
+    "question": "输入频率范围是多少？",
+    "expected": "40–70 Hz",
+    "expected_pages": [
+      5
+    ]
+  },
+  {
+    "id": "R12",
+    "question": "手册列出的电池类型是什么？",
+    "expected": "SMF-VRLA铅酸电池",
+    "expected_pages": [
+      6
+    ]
+  },
+  {
+    "id": "R13",
+    "question": "环境相对湿度范围和凝露条件是什么？",
+    "expected": "0–95%；非冷凝",
+    "expected_pages": [
+      4
+    ]
+  },
+  {
+    "id": "R14",
+    "question": "这台UPS的Wi-Fi连接密码是什么？",
+    "expected": "资料未提供",
+    "expected_pages": []
+  },
+  {
+    "id": "R15",
+    "question": "这台UPS此时的实际电池充电百分比是多少？",
+    "expected": "资料未提供实时数值",
+    "expected_pages": []
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "R06",
+    "question": "手册说PowerChute可以安装在32位系统上吗？",
+    "expected": "不可以；64位应用",
+    "expected_pages": [
+      11
+    ],
+    "retrieved": [
+      {
+        "text": "机。\n注：PowerChute 是 64 位应用程序，无法安装\n在 32 位操作系统上 。\n3. 内置串行端口也可通过串行线缆用于附加通\n讯选项。\n注：RS232 和 USB 无法同时使用。\n运行\n使用显示屏\n这些 Easy UPS 型号配备了直观和可配置的 LCD 显示屏。此显示屏对软件界面起到补充作用，可以传递类似信息，\n也可用于配置 UPS 设置。\n显示屏包含以下按键和指示灯:\n\n\n",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第11页，块03",
+        "pdf_page": 11,
+        "chunk_id": "p11-c03",
+        "score": 0.6465358734130859
+      }
+    ],
+    "context": "[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第11页，块03]\n机。\n注：PowerChute 是 64 位应用程序，无法安装\n在 32 位操作系统上 。\n3. 内置串行端口也可通过串行线缆用于附加通\n讯选项。\n注：RS232 和 USB 无法同时使用。\n运行\n使用显示屏\n这些 Easy UPS 型号配备了直观和可配置的 LCD 显示屏。此显示屏对软件界面起到补充作用，可以传递类似信息，\n也可用于配置 UPS 设置。\n显示屏包含以下按键和指示灯:\n\n\n\n\n",
+    "answer": "不可以。手册说明：“PowerChute 是 64 位应用程序，无法安装在 32 位操作系统上。”（EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第11页，块03）",
+    "top_k": 1,
+    "context_characters": 250,
+    "reference_page_hit": true,
+    "status": "ok"
+  },
+  {
+    "id": "R06",
+    "question": "手册说PowerChute可以安装在32位系统上吗？",
+    "expected": "不可以；64位应用",
+    "expected_pages": [
+      11
+    ],
+    "retrieved": [
+      {
+        "text": "机。\n注：PowerChute 是 64 位应用程序，无法安装\n在 32 位操作系统上 。\n3. 内置串行端口也可通过串行线缆用于附加通\n讯选项。\n注：RS232 和 USB 无法同时使用。\n运行\n使用显示屏\n这些 Easy UPS 型号配备了直观和可配置的 LCD 显示屏。此显示屏对软件界面起到补充作用，可以传递类似信息，\n也可用于配置 UPS 设置。\n显示屏包含以下按键和指示灯:\n\n\n",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第11页，块03",
+        "pdf_page": 11,
+        "chunk_id": "p11-c03",
+        "score": 0.6465358734130859
+      },
+      {
+        "text": "详细信息，请登录 APC\n网站(https://www.apc.com/us/en/faqs/home)查\n看知识库中的 FAQ000223363 文章。\n2. 对于带有操作系统的服务器或其他设备，请\n登录 www.apc.com/pcss 下载并安装最新版\nPowerChute Serial Shutdown。PowerChute\nSerial Shutdown 支持在长时间停电的情况下安\n全关机。\n注：PowerChute 是 64 位应用程序，无法安装\n在 32 位操作系统上 。\n3. 内置串行端口也可通过串",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第11页，块02",
+        "pdf_page": 11,
+        "chunk_id": "p11-c02",
+        "score": 0.6386418342590332
+      },
+      {
+        "text": "连接并安装 PowerChuteTM UPS Management 软件\nEasy UPS On-Line 配备了 PowerChute™ UPS 管理软件用于无人值守操作系统关闭、UPS 监视、UPS 控制和能量\n报告。下图所示为典型服务器安装。\n1. 将 USB 线从 UPS 后面连接到受保护的设备，\n如服务器。\n注：通过 USB 与 PowerChute 通信需要安装\nUSB 驱动程序。有关详细信息，请登录 APC\n网站(https://www.apc.com/us/en/faqs/home)查\n看知识库中的",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第11页，块01",
+        "pdf_page": 11,
+        "chunk_id": "p11-c01",
+        "score": 0.592345654964447
+      }
+    ],
+    "context": "[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第11页，块03]\n机。\n注：PowerChute 是 64 位应用程序，无法安装\n在 32 位操作系统上 。\n3. 内置串行端口也可通过串行线缆用于附加通\n讯选项。\n注：RS232 和 USB 无法同时使用。\n运行\n使用显示屏\n这些 Easy UPS 型号配备了直观和可配置的 LCD 显示屏。此显示屏对软件界面起到补充作用，可以传递类似信息，\n也可用于配置 UPS 设置。\n显示屏包含以下按键和指示灯:\n\n\n\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第11页，块02]\n详细信息，请登录 APC\n网站(https://www.apc.com/us/en/faqs/home)查\n看知识库中的 FAQ000223363 文章。\n2. 对于带有操作系统的服务器或其他设备，请\n登录 www.apc.com/pcss 下载并安装最新版\nPowerChute Serial Shutdown。PowerChute\nSerial Shutdown 支持在长时间停电的情况下安\n全关机。\n注：PowerChute 是 64 位应用程序，无法安装\n在 32 位操作系统上 。\n3. 内置串行端口也可通过串\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第11页，块01]\n连接并安装 PowerChuteTM UPS Management 软件\nEasy UPS On-Line 配备了 PowerChute™ UPS 管理软件用于无人值守操作系统关闭、UPS 监视、UPS 控制和能量\n报告。下图所示为典型服务器安装。\n1. 将 USB 线从 UPS 后面连接到受保护的设备，\n如服务器。\n注：通过 USB 与 PowerChute 通信需要安装\nUSB 驱动程序。有关详细信息，请登录 APC\n网站(https://www.apc.com/us/en/faqs/home)查\n看知识库中的\n\n",
+    "answer": "不可以。手册明确说：“PowerChute 是 64 位应用程序，无法安装在 32 位操作系统上。”（EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第11页，块02/块03）",
+    "top_k": 3,
+    "context_characters": 872,
+    "reference_page_hit": true,
+    "status": "ok"
+  }
+]
