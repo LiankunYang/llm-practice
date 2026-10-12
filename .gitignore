@@ -6,3 +6,4 @@ __pycache__/
 .ipynb_checkpoints/
 bge_small_local/
 practice_documents05/
+llm06_test_results.json

@@ -10,6 +10,16 @@ records = [
 ]
 
 
+test_cases = [
+    {"id": "T01", "question": "风机A滤网多久检查一次？", "expected": "45天；依据风机说明.txt第1行。"},
+    {"id": "T02", "question": "风机A的过滤网多久维护一次？", "expected": "45天；检查换一种说法是否仍能找到滤网资料，依据风机说明.txt第1行。"},
+    {"id": "T03", "question": "风机A过热时应该怎么处理？", "expected": "先停机，再检查风道；依据风机说明.txt第3行。"},
+    {"id": "T04", "question": "水泵B密封多久检查一次？", "expected": "90天；依据水泵说明.txt第1行。"},
+    {"id": "T05", "question": "风机A的滤网是不是每30天检查一次？", "expected": "应纠正为45天，不能赞同30天；依据风机说明.txt第1行。"},
+    {"id": "T06", "question": "风机A的生产厂家是谁？", "expected": "原文未提供；不能编造厂家信息。"},
+]
+
+
 def create_client():
     from openai import OpenAI
 
@@ -128,6 +138,20 @@ def answer_with_search(records, question, model, client):
         return "未检索到相关资料"
     context = build_context(matched_records)
     return ask_model(question, context, client)
+
+
+def ask_and_record(records, case, model, client):
+    question = case["question"]
+    matched_records = semantic_find(records, question, model)
+    context = build_context(matched_records)
+    if not question.strip():
+        answer = "请输入问题"
+    elif not matched_records:
+        answer = "未检索到相关资料"
+    else:
+        answer = ask_model(question, context, client)
+    return {"id": case["id"], "question": question, "expected": case["expected"],
+            "retrieved": matched_records, "context": context, "answer": answer}
 
 
 if __name__ == "__main__":
