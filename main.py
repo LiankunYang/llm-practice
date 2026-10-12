@@ -52,6 +52,22 @@ def build_context(records):
     return context
 
 
+def load_records(filenames):
+    from pathlib import Path
+
+    loaded_records = []
+    for filename in filenames:
+        path = Path(filename)
+        with path.open("r", encoding="utf-8") as file:
+            text = file.read()
+        for line_number, line in enumerate(text.splitlines(), start=1):
+            clean_line = line.strip()
+            if clean_line:
+                loaded_records.append({"text": clean_line,
+                                       "source": f"{path.as_posix()}，第{line_number}行"})
+    return loaded_records
+
+
 def answer_question(records, question, keyword, client):
     hits = find_records(records, keyword)
     if not hits:
@@ -121,7 +137,10 @@ if __name__ == "__main__":
     parser.add_argument("--preview", action="store_true", help="只看检索结果，不请求模型")
     parser.add_argument("--semantic", action="store_true", help="用 BGE 检索段落，不请求 DeepSeek")
     parser.add_argument("--rag", action="store_true", help="先用 BGE 找资料，再请求 DeepSeek 回答")
+    parser.add_argument("--files", nargs="+", help="读取 UTF-8 TXT，每个非空行作为一条资料")
     args = parser.parse_args()
+    if args.files:
+        records = load_records(args.files)
     if args.rag:
         model = load_embedder()
         client = create_client()
