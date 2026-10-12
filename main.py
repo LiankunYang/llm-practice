@@ -95,14 +95,43 @@ def get_records(records, hits):
     return matches
 
 
+def semantic_find(records, question, model):
+    if not records or not question.strip():
+        return []
+    texts = [record["text"] for record in records]
+    doc_vectors = model.encode(texts, normalize_embeddings=True)
+    hits = semantic_search(records, question, model, doc_vectors)
+    return get_records(records, hits)
+
+
+def answer_with_search(records, question, model, client):
+    if not question.strip():
+        return "请输入问题"
+    matched_records = semantic_find(records, question, model)
+    if not matched_records:
+        return "未检索到相关资料"
+    context = build_context(matched_records)
+    return ask_model(question, context, client)
+
+
 if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--preview", action="store_true", help="只看检索结果，不请求模型")
     parser.add_argument("--semantic", action="store_true", help="用 BGE 检索段落，不请求 DeepSeek")
+    parser.add_argument("--rag", action="store_true", help="先用 BGE 找资料，再请求 DeepSeek 回答")
     args = parser.parse_args()
-    if args.semantic:
+    if args.rag:
+        model = load_embedder()
+        client = create_client()
+        questions = ["过滤网多久维护一次？", "机器太热应该怎么处理？",
+                     "水泵密封多久检查一次？", "设备的生产厂家是谁？"]
+        for question in questions:
+            print("问题：", question)
+            print("回答：", answer_with_search(records, question, model, client))
+            print()
+    elif args.semantic:
         model = load_embedder()
         doc_vectors = model.encode([r["text"] for r in records], normalize_embeddings=True)
         print("文档向量形状：", doc_vectors.shape)
