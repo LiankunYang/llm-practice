@@ -5,3 +5,4 @@ transformers==5.19.0
 modelscope==1.40.2
 pypdf==6.10.0
 requests>=2.25
+scikit-learn==1.7.1
