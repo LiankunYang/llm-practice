@@ -1,0 +1,80 @@
+[
+  {
+    "id": "U03",
+    "question": "电池模块放在仓库里就不用再充电了，对吗？手册对此怎么规定？",
+    "search_query": "电池贮存期间的充电要求和充电周期",
+    "query_method": "manual_rewrite_diagnostic",
+    "old_answer": "不对。手册未支持“电池模块放在仓库里就不用再充电”的说法。\n\n手册摘录只提供了电池类型、模块数量、电压和 Ah 额定值等电池规格，以及更换电池需参阅适用电池更换用户手册/联系经销商或 APC 网站的信息；并未规定仓库储存时无需再充电。\n\n资料未提供关于电池模块仓库储存是否需要充电的明确规定。",
+    "old_retrieved": [
+      {
+        "text": "每个电池模块的电压 24 V 48 V 72 V\nUPS 的总电压 24 V 48 V 72 V\nAh 额定值 每个电池模块 9 Ah\n注释：\n请参阅适用的电池更换用户手册，以了解安装说明。\n请联系经销商或转到 APC by Schneider Electric 网站 www.apc.com 了解有关更换电池的信息。\n前面板显示器\n UPS 电源开/关按钮\n 警报 LED\n 向上/向下按钮\n 确认按钮\n 静音/ESC 按钮\n LCD 显示屏\n 状态指示灯",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第6页，块02",
+        "pdf_page": 6,
+        "chunk_id": "p06-c02",
+        "score": 0.032266458495966696,
+        "keyword_score": 0.12818173123538562,
+        "semantic_score": 0.5247986316680908,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "电压处于\n所配置输出电压的±5%范围内，和所\n配置输出频率的±3 Hz 范围内，所连\n设备即会通过旁路继电器接收市电输\n入电源。在模式下逆变器关闭。\n如果市电输入超出范围，逆变器会打\n开。负载转移到在线模式或电池模\n式。所连设备的供电可能中断最长 10\n毫秒。\n重新启动设置的\n最小电池容量\n0% 0%, 15%,50%,90%, 在电池的充电量能够提供此设置配置的\n运行时间之前，UPS 输出不会打开。\n如果配置为 0%，则在市电恢复后，\nUPS 输出立即打开。\n电池电量不足状\n态指示设置\n2 分钟 2 分钟、5 分",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第15页，块02",
+        "pdf_page": 15,
+        "chunk_id": "p15-c02",
+        "score": 0.03177805800756621,
+        "keyword_score": 0.03438500181113538,
+        "semantic_score": 0.5317575931549072,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "电池\nUPS 型号 SRV1KI\nSRV1KRI\nSRV2KI\nSRV2KRI\nSRV3KI\nSRV3KRI\n电池类型 密封式免维护阀控式铅酸电池\n(SMF-VRLA)\n更换电池模块 APCRBCV203（塔式）\nAPCRBCV200（机架式）\nAPCRBCV204（塔式）\nAPCRBCV201（机架式）\nAPCRBCV205（塔式）\nAPCRBCV202（机架式）\n电池模块的数目 1 个电池模块\n每个电池模块的电压 24 V 48 V 72 V\nUPS 的总电压 24 V 48 V 72 V\nAh 额定值 每个电",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第6页，块01",
+        "pdf_page": 6,
+        "chunk_id": "p06-c01",
+        "score": 0.03128054740957967,
+        "keyword_score": 0.12789102653466144,
+        "semantic_score": 0.4947402775287628,
+        "score_type": "reciprocal_rank_fusion"
+      }
+    ],
+    "expected": "应纠正错误前提；贮存期间每六个月给电池模块充电一次。",
+    "retrieved": [
+      {
+        "text": "用 UPS。\n注：贮存期间每六个月给电池模\n块充电一次。\n贮存 -20 到 60°C\n海拔高度 工作 0 - 2,000 m: 正常操作\n> 2,000 m：高度每增加 100 m 负载减小\n1%\n> 3,000 m：UPS 不工作\n贮存 0 - 15,000 m\n湿度 0 到 95%相对湿度，非冷凝\n国际防护等级标准 IP20\n供电系统类型 TT 和 TN\n污染等级 2\n过压范围 II\n适用标准 IEC 62040-1\n物理规格\n塔式型号\nUPS 型号 SRV1KI SRV2KI SRV3KI\n带包装的尺寸\n宽",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第4页，块02",
+        "pdf_page": 4,
+        "chunk_id": "p04-c02",
+        "score": 0.032018442622950824,
+        "keyword_score": 0.10094635347500028,
+        "semantic_score": 0.5019128322601318,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "电压处于\n所配置输出电压的±5%范围内，和所\n配置输出频率的±3 Hz 范围内，所连\n设备即会通过旁路继电器接收市电输\n入电源。在模式下逆变器关闭。\n如果市电输入超出范围，逆变器会打\n开。负载转移到在线模式或电池模\n式。所连设备的供电可能中断最长 10\n毫秒。\n重新启动设置的\n最小电池容量\n0% 0%, 15%,50%,90%, 在电池的充电量能够提供此设置配置的\n运行时间之前，UPS 输出不会打开。\n如果配置为 0%，则在市电恢复后，\nUPS 输出立即打开。\n电池电量不足状\n态指示设置\n2 分钟 2 分钟、5 分",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第15页，块02",
+        "pdf_page": 15,
+        "chunk_id": "p15-c02",
+        "score": 0.031746031746031744,
+        "keyword_score": 0.048658491645497876,
+        "semantic_score": 0.5052863955497742,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "UMBER, C\n电池充电状态 % BAT, %\n负载水平百分比(最大瓦数或 VA) % OUT, %\n负载水平(kVA) kVA OUT, kVA\n所连电池的总 Ah 容量 Ah BAT, Ah\n剩余电池运行时间 分钟 BAT, 分\n配置\n配置 UPS 参数\n按照以下步骤配置 UPS 中的参数:\n1. 按确认按钮。\n2. 按向上/向下按钮导航至“设置” 。\n3. 按确认按钮。\n4. 使用向上/向下按钮浏览参数。\n5. 按确认按钮编辑参数。图标开始闪烁指示编辑。\n6. 按向上/向下按钮浏览可用于所选参数的选项。\n7",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第14页，块02",
+        "pdf_page": 14,
+        "chunk_id": "p14-c02",
+        "score": 0.031544957774465976,
+        "keyword_score": 0.019785435469973148,
+        "semantic_score": 0.5387572646141052,
+        "score_type": "reciprocal_rank_fusion"
+      }
+    ],
+    "context": "[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第4页，块02]\n用 UPS。\n注：贮存期间每六个月给电池模\n块充电一次。\n贮存 -20 到 60°C\n海拔高度 工作 0 - 2,000 m: 正常操作\n> 2,000 m：高度每增加 100 m 负载减小\n1%\n> 3,000 m：UPS 不工作\n贮存 0 - 15,000 m\n湿度 0 到 95%相对湿度，非冷凝\n国际防护等级标准 IP20\n供电系统类型 TT 和 TN\n污染等级 2\n过压范围 II\n适用标准 IEC 62040-1\n物理规格\n塔式型号\nUPS 型号 SRV1KI SRV2KI SRV3KI\n带包装的尺寸\n宽\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第15页，块02]\n电压处于\n所配置输出电压的±5%范围内，和所\n配置输出频率的±3 Hz 范围内，所连\n设备即会通过旁路继电器接收市电输\n入电源。在模式下逆变器关闭。\n如果市电输入超出范围，逆变器会打\n开。负载转移到在线模式或电池模\n式。所连设备的供电可能中断最长 10\n毫秒。\n重新启动设置的\n最小电池容量\n0% 0%, 15%,50%,90%, 在电池的充电量能够提供此设置配置的\n运行时间之前，UPS 输出不会打开。\n如果配置为 0%，则在市电恢复后，\nUPS 输出立即打开。\n电池电量不足状\n态指示设置\n2 分钟 2 分钟、5 分\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第14页，块02]\nUMBER, C\n电池充电状态 % BAT, %\n负载水平百分比(最大瓦数或 VA) % OUT, %\n负载水平(kVA) kVA OUT, kVA\n所连电池的总 Ah 容量 Ah BAT, Ah\n剩余电池运行时间 分钟 BAT, 分\n配置\n配置 UPS 参数\n按照以下步骤配置 UPS 中的参数:\n1. 按确认按钮。\n2. 按向上/向下按钮导航至“设置” 。\n3. 按确认按钮。\n4. 使用向上/向下按钮浏览参数。\n5. 按确认按钮编辑参数。图标开始闪烁指示编辑。\n6. 按向上/向下按钮浏览可用于所选参数的选项。\n7\n\n",
+    "context_characters": 931,
+    "top_k": 3,
+    "status": "ok",
+    "answer": "不对。手册规定：贮存期间每六个月给电池模块充电一次。（EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第4页，块02）",
+    "review": "通过：纠正了不用充电的错误前提，说明贮存期间每六个月充电一次，引用第4页块02包含对应依据。"
+  }
+]
