@@ -1,0 +1,250 @@
+[
+  {
+    "id": "U01",
+    "question": "手册列出的额定负载与低于额定负载时的工作温度范围分别是多少？",
+    "expected": "额定负载时0到40°C；低于额定负载时40到50°C；应保留负载条件。",
+    "expected_pages": [
+      4
+    ],
+    "retrieved": [
+      {
+        "text": "规格\n环境规格\n注意\n设备损坏风险\n• UPS 必须在室内使用。\n• 安装位置应坚固，足以支撑 UPS 的重量。\n• 不要在灰尘过多或温度或湿度超出规定的地方使用 UPS。\n否则，可能导致设备损坏。\n温度 工作 额定负载时 0 到 40°C\n低于额定负载时 40 到 50 °C\n本设备仅适用于在室内使用。应\n将其放置在牢固可靠并足以支撑\n其重量的位置。\n不要在灰尘过多或温度或湿度超\n出规定的地方使用 UPS。\n注：贮存期间每六个月给电池模\n块充电一次。\n贮存 -20 到 60°C\n海拔高度 工作 0 - 2,000",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第4页，块01",
+        "pdf_page": 4,
+        "chunk_id": "p04-c01",
+        "score": 0.03252247488101534,
+        "keyword_score": 0.20167249939649845,
+        "semantic_score": 0.5357543230056763,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "UPS 容量 1000 V A / 800 W 2000 V A / 1600 W 3000 V A / 2400 W\n额定输出电压 230 V AC\n其它可编程电压 220 V AC, 240 V AC\n额定负载时效率 最大 88%\n输出电压调节 ± 1% 静态\n输出电压失真\n• 完全线性负载时最大 3%，\n• 完全非线性 RCD 负载（100% V A，0.9 PF）时最大 6%\n• 最后 60 秒备份时间时 15%(完全负载仅适用于内部电池)\n频率 － 电池模式 50 Hz ± 0.5% 或 60 Hz ±",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第5页，块02",
+        "pdf_page": 5,
+        "chunk_id": "p05-c02",
+        "score": 0.031754032258064516,
+        "keyword_score": 0.11173550810104238,
+        "semantic_score": 0.5017725229263306,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "用 UPS。\n注：贮存期间每六个月给电池模\n块充电一次。\n贮存 -20 到 60°C\n海拔高度 工作 0 - 2,000 m: 正常操作\n> 2,000 m：高度每增加 100 m 负载减小\n1%\n> 3,000 m：UPS 不工作\n贮存 0 - 15,000 m\n湿度 0 到 95%相对湿度，非冷凝\n国际防护等级标准 IP20\n供电系统类型 TT 和 TN\n污染等级 2\n过压范围 II\n适用标准 IEC 62040-1\n物理规格\n塔式型号\nUPS 型号 SRV1KI SRV2KI SRV3KI\n带包装的尺寸\n宽",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第4页，块02",
+        "pdf_page": 4,
+        "chunk_id": "p04-c02",
+        "score": 0.03125763125763126,
+        "keyword_score": 0.018181186409458767,
+        "semantic_score": 0.5104706287384033,
+        "score_type": "reciprocal_rank_fusion"
+      }
+    ],
+    "context": "[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第4页，块01]\n规格\n环境规格\n注意\n设备损坏风险\n• UPS 必须在室内使用。\n• 安装位置应坚固，足以支撑 UPS 的重量。\n• 不要在灰尘过多或温度或湿度超出规定的地方使用 UPS。\n否则，可能导致设备损坏。\n温度 工作 额定负载时 0 到 40°C\n低于额定负载时 40 到 50 °C\n本设备仅适用于在室内使用。应\n将其放置在牢固可靠并足以支撑\n其重量的位置。\n不要在灰尘过多或温度或湿度超\n出规定的地方使用 UPS。\n注：贮存期间每六个月给电池模\n块充电一次。\n贮存 -20 到 60°C\n海拔高度 工作 0 - 2,000\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第5页，块02]\nUPS 容量 1000 V A / 800 W 2000 V A / 1600 W 3000 V A / 2400 W\n额定输出电压 230 V AC\n其它可编程电压 220 V AC, 240 V AC\n额定负载时效率 最大 88%\n输出电压调节 ± 1% 静态\n输出电压失真\n• 完全线性负载时最大 3%，\n• 完全非线性 RCD 负载（100% V A，0.9 PF）时最大 6%\n• 最后 60 秒备份时间时 15%(完全负载仅适用于内部电池)\n频率 － 电池模式 50 Hz ± 0.5% 或 60 Hz ±\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第4页，块02]\n用 UPS。\n注：贮存期间每六个月给电池模\n块充电一次。\n贮存 -20 到 60°C\n海拔高度 工作 0 - 2,000 m: 正常操作\n> 2,000 m：高度每增加 100 m 负载减小\n1%\n> 3,000 m：UPS 不工作\n贮存 0 - 15,000 m\n湿度 0 到 95%相对湿度，非冷凝\n国际防护等级标准 IP20\n供电系统类型 TT 和 TN\n污染等级 2\n过压范围 II\n适用标准 IEC 62040-1\n物理规格\n塔式型号\nUPS 型号 SRV1KI SRV2KI SRV3KI\n带包装的尺寸\n宽\n\n",
+    "context_characters": 928,
+    "answer": "额定负载时工作温度为 0 到 40°C；低于额定负载时为 40 到 50°C。依据原文：“工作 额定负载时 0 到 40°C / 低于额定负载时 40 到 50 °C”。来源：[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第4页，块01]。",
+    "status": "ok",
+    "top_k": 3,
+    "retrieval_method": "char_tfidf_and_semantic_rrf",
+    "candidate_k": 8,
+    "reference_page_hit": true,
+    "retrieval_code_sha256": "3a47da9bd5b041857d1e1041f7e7f0343af8c0ecf3bd3db222d5b8a4da6e9ad1",
+    "review": "通过：两种负载条件与对应温度范围均正确，第4页块01包含完整依据。"
+  },
+  {
+    "id": "U02",
+    "question": "100%负载和40%负载时，输入电压范围分别是多少？",
+    "expected": "100%负载时160–280 VAC；40%负载时110–285 VAC；不能混淆两种条件。",
+    "expected_pages": [
+      5
+    ],
+    "retrieved": [
+      {
+        "text": "UPS 容量 1000 V A / 800 W 2000 V A / 1600 W 3000 V A / 2400 W\n额定输出电压 230 V AC\n其它可编程电压 220 V AC, 240 V AC\n额定负载时效率 最大 88%\n输出电压调节 ± 1% 静态\n输出电压失真\n• 完全线性负载时最大 3%，\n• 完全非线性 RCD 负载（100% V A，0.9 PF）时最大 6%\n• 最后 60 秒备份时间时 15%(完全负载仅适用于内部电池)\n频率 － 电池模式 50 Hz ± 0.5% 或 60 Hz ±",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第5页，块02",
+        "pdf_page": 5,
+        "chunk_id": "p05-c02",
+        "score": 0.03252247488101534,
+        "keyword_score": 0.10243538084765802,
+        "semantic_score": 0.6201795935630798,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "输入/输出规格\nUPS 型号 SRV1KI\nSRV1KRI\nSRV2KI\nSRV2KRI\nSRV3KI\nSRV3KRI\n输入 电压 230 V AC 标称\n频率 40 – 70 Hz\n输入电压范围(100%负\n载) 160 V AC – 280 V AC\n输入电压范围(40%负载) 110 V AC – 285V AC\n输入功率系数(100%电阻\n性负载) ≥ 0.95\n输入保护 输入断路器\n输出 UPS 容量 1000 V A / 800 W 2000 V A / 1600 W 3000 V A / 2400 W",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第5页，块01",
+        "pdf_page": 5,
+        "chunk_id": "p05-c01",
+        "score": 0.032266458495966696,
+        "keyword_score": 0.32301524192844977,
+        "semantic_score": 0.5697855949401855,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "电压处于\n所配置输出电压的±5%范围内，和所\n配置输出频率的±3 Hz 范围内，所连\n设备即会通过旁路继电器接收市电输\n入电源。在模式下逆变器关闭。\n如果市电输入超出范围，逆变器会打\n开。负载转移到在线模式或电池模\n式。所连设备的供电可能中断最长 10\n毫秒。\n重新启动设置的\n最小电池容量\n0% 0%, 15%,50%,90%, 在电池的充电量能够提供此设置配置的\n运行时间之前，UPS 输出不会打开。\n如果配置为 0%，则在市电恢复后，\nUPS 输出立即打开。\n电池电量不足状\n态指示设置\n2 分钟 2 分钟、5 分",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第15页，块02",
+        "pdf_page": 15,
+        "chunk_id": "p15-c02",
+        "score": 0.031754032258064516,
+        "keyword_score": 0.07028362878797467,
+        "semantic_score": 0.5899003148078918,
+        "score_type": "reciprocal_rank_fusion"
+      }
+    ],
+    "context": "[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第5页，块02]\nUPS 容量 1000 V A / 800 W 2000 V A / 1600 W 3000 V A / 2400 W\n额定输出电压 230 V AC\n其它可编程电压 220 V AC, 240 V AC\n额定负载时效率 最大 88%\n输出电压调节 ± 1% 静态\n输出电压失真\n• 完全线性负载时最大 3%，\n• 完全非线性 RCD 负载（100% V A，0.9 PF）时最大 6%\n• 最后 60 秒备份时间时 15%(完全负载仅适用于内部电池)\n频率 － 电池模式 50 Hz ± 0.5% 或 60 Hz ±\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第5页，块01]\n输入/输出规格\nUPS 型号 SRV1KI\nSRV1KRI\nSRV2KI\nSRV2KRI\nSRV3KI\nSRV3KRI\n输入 电压 230 V AC 标称\n频率 40 – 70 Hz\n输入电压范围(100%负\n载) 160 V AC – 280 V AC\n输入电压范围(40%负载) 110 V AC – 285V AC\n输入功率系数(100%电阻\n性负载) ≥ 0.95\n输入保护 输入断路器\n输出 UPS 容量 1000 V A / 800 W 2000 V A / 1600 W 3000 V A / 2400 W\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第15页，块02]\n电压处于\n所配置输出电压的±5%范围内，和所\n配置输出频率的±3 Hz 范围内，所连\n设备即会通过旁路继电器接收市电输\n入电源。在模式下逆变器关闭。\n如果市电输入超出范围，逆变器会打\n开。负载转移到在线模式或电池模\n式。所连设备的供电可能中断最长 10\n毫秒。\n重新启动设置的\n最小电池容量\n0% 0%, 15%,50%,90%, 在电池的充电量能够提供此设置配置的\n运行时间之前，UPS 输出不会打开。\n如果配置为 0%，则在市电恢复后，\nUPS 输出立即打开。\n电池电量不足状\n态指示设置\n2 分钟 2 分钟、5 分\n\n",
+    "context_characters": 930,
+    "answer": "100%负载时输入电压范围为 160 V AC – 280 V AC；40%负载时为 110 V AC – 285 V AC。  \n依据：  \n- “输入电压范围(100%负载) 160 V AC – 280 V AC”  \n- “输入电压范围(40%负载) 110 V AC – 285V AC”  \n来源：[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第5页，块01]",
+    "status": "ok",
+    "top_k": 3,
+    "retrieval_method": "char_tfidf_and_semantic_rrf",
+    "candidate_k": 8,
+    "reference_page_hit": true,
+    "retrieval_code_sha256": "3a47da9bd5b041857d1e1041f7e7f0343af8c0ecf3bd3db222d5b8a4da6e9ad1",
+    "review": "通过：100%与40%负载下的输入电压范围均正确，第5页块01包含对应依据。"
+  },
+  {
+    "id": "U03",
+    "question": "电池模块放在仓库里就不用再充电了，对吗？手册对此怎么规定？",
+    "expected": "应纠正错误前提；贮存期间每六个月给电池模块充电一次。",
+    "expected_pages": [
+      4
+    ],
+    "retrieved": [
+      {
+        "text": "每个电池模块的电压 24 V 48 V 72 V\nUPS 的总电压 24 V 48 V 72 V\nAh 额定值 每个电池模块 9 Ah\n注释：\n请参阅适用的电池更换用户手册，以了解安装说明。\n请联系经销商或转到 APC by Schneider Electric 网站 www.apc.com 了解有关更换电池的信息。\n前面板显示器\n UPS 电源开/关按钮\n 警报 LED\n 向上/向下按钮\n 确认按钮\n 静音/ESC 按钮\n LCD 显示屏\n 状态指示灯",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第6页，块02",
+        "pdf_page": 6,
+        "chunk_id": "p06-c02",
+        "score": 0.032266458495966696,
+        "keyword_score": 0.12818173123538562,
+        "semantic_score": 0.5247986316680908,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "电压处于\n所配置输出电压的±5%范围内，和所\n配置输出频率的±3 Hz 范围内，所连\n设备即会通过旁路继电器接收市电输\n入电源。在模式下逆变器关闭。\n如果市电输入超出范围，逆变器会打\n开。负载转移到在线模式或电池模\n式。所连设备的供电可能中断最长 10\n毫秒。\n重新启动设置的\n最小电池容量\n0% 0%, 15%,50%,90%, 在电池的充电量能够提供此设置配置的\n运行时间之前，UPS 输出不会打开。\n如果配置为 0%，则在市电恢复后，\nUPS 输出立即打开。\n电池电量不足状\n态指示设置\n2 分钟 2 分钟、5 分",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第15页，块02",
+        "pdf_page": 15,
+        "chunk_id": "p15-c02",
+        "score": 0.03177805800756621,
+        "keyword_score": 0.03438500181113538,
+        "semantic_score": 0.5317575931549072,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "电池\nUPS 型号 SRV1KI\nSRV1KRI\nSRV2KI\nSRV2KRI\nSRV3KI\nSRV3KRI\n电池类型 密封式免维护阀控式铅酸电池\n(SMF-VRLA)\n更换电池模块 APCRBCV203（塔式）\nAPCRBCV200（机架式）\nAPCRBCV204（塔式）\nAPCRBCV201（机架式）\nAPCRBCV205（塔式）\nAPCRBCV202（机架式）\n电池模块的数目 1 个电池模块\n每个电池模块的电压 24 V 48 V 72 V\nUPS 的总电压 24 V 48 V 72 V\nAh 额定值 每个电",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第6页，块01",
+        "pdf_page": 6,
+        "chunk_id": "p06-c01",
+        "score": 0.03128054740957967,
+        "keyword_score": 0.12789102653466144,
+        "semantic_score": 0.4947402775287628,
+        "score_type": "reciprocal_rank_fusion"
+      }
+    ],
+    "context": "[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第6页，块02]\n每个电池模块的电压 24 V 48 V 72 V\nUPS 的总电压 24 V 48 V 72 V\nAh 额定值 每个电池模块 9 Ah\n注释：\n请参阅适用的电池更换用户手册，以了解安装说明。\n请联系经销商或转到 APC by Schneider Electric 网站 www.apc.com 了解有关更换电池的信息。\n前面板显示器\n UPS 电源开/关按钮\n 警报 LED\n 向上/向下按钮\n 确认按钮\n 静音/ESC 按钮\n LCD 显示屏\n 状态指示灯\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第15页，块02]\n电压处于\n所配置输出电压的±5%范围内，和所\n配置输出频率的±3 Hz 范围内，所连\n设备即会通过旁路继电器接收市电输\n入电源。在模式下逆变器关闭。\n如果市电输入超出范围，逆变器会打\n开。负载转移到在线模式或电池模\n式。所连设备的供电可能中断最长 10\n毫秒。\n重新启动设置的\n最小电池容量\n0% 0%, 15%,50%,90%, 在电池的充电量能够提供此设置配置的\n运行时间之前，UPS 输出不会打开。\n如果配置为 0%，则在市电恢复后，\nUPS 输出立即打开。\n电池电量不足状\n态指示设置\n2 分钟 2 分钟、5 分\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第6页，块01]\n电池\nUPS 型号 SRV1KI\nSRV1KRI\nSRV2KI\nSRV2KRI\nSRV3KI\nSRV3KRI\n电池类型 密封式免维护阀控式铅酸电池\n(SMF-VRLA)\n更换电池模块 APCRBCV203（塔式）\nAPCRBCV200（机架式）\nAPCRBCV204（塔式）\nAPCRBCV201（机架式）\nAPCRBCV205（塔式）\nAPCRBCV202（机架式）\n电池模块的数目 1 个电池模块\n每个电池模块的电压 24 V 48 V 72 V\nUPS 的总电压 24 V 48 V 72 V\nAh 额定值 每个电\n\n",
+    "context_characters": 907,
+    "answer": "不对。手册未支持“电池模块放在仓库里就不用再充电”的说法。\n\n手册摘录只提供了电池类型、模块数量、电压和 Ah 额定值等电池规格，以及更换电池需参阅适用电池更换用户手册/联系经销商或 APC 网站的信息；并未规定仓库储存时无需再充电。\n\n资料未提供关于电池模块仓库储存是否需要充电的明确规定。",
+    "status": "ok",
+    "top_k": 3,
+    "retrieval_method": "char_tfidf_and_semantic_rrf",
+    "candidate_k": 8,
+    "reference_page_hit": false,
+    "retrieval_code_sha256": "3a47da9bd5b041857d1e1041f7e7f0343af8c0ecf3bd3db222d5b8a4da6e9ad1",
+    "review": "不通过：未检索到第4页的贮存充电条款，没有回答每六个月充电一次；问题出在漏检。"
+  },
+  {
+    "id": "U04",
+    "question": "查看事件日志时，想看更早的事件和更新的事件，分别用哪个方向按钮？",
+    "expected": "向下查看旧事件；向上查看新事件。",
+    "expected_pages": [
+      16
+    ],
+    "retrieved": [
+      {
+        "text": "个事件和并在此日志中显示代\n码。\n按确认按钮可查看日志。使用向上/向下按钮可查看记录的事件。向下按钮导航至旧事件，\n向上按钮导航至新事件。\n每个日志条目有数字和文字事件代码。在日志末尾，单词“End ”将显示。按静音/ESC 按\n钮返回主屏幕。\n显示 UPS 信息\n使用此菜单选项可查看 UPS 信息。按确认按钮可查看 UPS 的等级。\n按向上按钮可查看 UPS 固件版本。按静音/ESC 按钮返回主屏幕。\n到旁路的用户命令\n使用此菜单选项可将 UPS 切换到旁路模式，或转换到在线模式。\n按确认按钮：\n切换：用来将 U",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第16页，块02",
+        "pdf_page": 16,
+        "chunk_id": "p16-c02",
+        "score": 0.03252247488101534,
+        "keyword_score": 0.1932113523443006,
+        "semantic_score": 0.6069098711013794,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "高级显示屏导航\n在 UPS 显示屏的主菜单中有五个选项和两个子菜单选项。从主屏幕按确认按钮访问这些菜单选项。使用向上/向\n下按钮浏览菜单选项。\n菜单选项 说明\n配置 UPS\n使用此菜单选项可配置 UPS 参数。按确认按钮可查看配置选项。请参阅第 13 页的“配置\nUPS 参数”了解详情。按静音/ESC 按钮返回主屏幕。\n显示事件日志\n使用此菜单选项可查看 UPS 事件日志。UPS 记录最后 10 个事件和并在此日志中显示代\n码。\n按确认按钮可查看日志。使用向上/向下按钮可查看记录的事件。向下按钮导航至旧事件，\n向上",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第16页，块01",
+        "pdf_page": 16,
+        "chunk_id": "p16-c01",
+        "score": 0.032018442622950824,
+        "keyword_score": 0.2377843744266307,
+        "semantic_score": 0.4506298899650574,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "下按钮浏览参数。\n5. 按确认按钮编辑参数。图标开始闪烁指示编辑。\n6. 按向上/向下按钮浏览可用于所选参数的选项。\n7. 按确认按钮选择选项或按静音/ESC 按钮终止当前参数的编辑。图标闪烁此后停止。\n8. 按向上/向下按钮导航至不同的参数。\n9. 按静音/ESC 按钮退出菜单导航。",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第14页，块03",
+        "pdf_page": 14,
+        "chunk_id": "p14-c03",
+        "score": 0.03200204813108039,
+        "keyword_score": 0.02236847214511014,
+        "semantic_score": 0.4967535734176636,
+        "score_type": "reciprocal_rank_fusion"
+      }
+    ],
+    "context": "[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第16页，块02]\n个事件和并在此日志中显示代\n码。\n按确认按钮可查看日志。使用向上/向下按钮可查看记录的事件。向下按钮导航至旧事件，\n向上按钮导航至新事件。\n每个日志条目有数字和文字事件代码。在日志末尾，单词“End ”将显示。按静音/ESC 按\n钮返回主屏幕。\n显示 UPS 信息\n使用此菜单选项可查看 UPS 信息。按确认按钮可查看 UPS 的等级。\n按向上按钮可查看 UPS 固件版本。按静音/ESC 按钮返回主屏幕。\n到旁路的用户命令\n使用此菜单选项可将 UPS 切换到旁路模式，或转换到在线模式。\n按确认按钮：\n切换：用来将 U\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第16页，块01]\n高级显示屏导航\n在 UPS 显示屏的主菜单中有五个选项和两个子菜单选项。从主屏幕按确认按钮访问这些菜单选项。使用向上/向\n下按钮浏览菜单选项。\n菜单选项 说明\n配置 UPS\n使用此菜单选项可配置 UPS 参数。按确认按钮可查看配置选项。请参阅第 13 页的“配置\nUPS 参数”了解详情。按静音/ESC 按钮返回主屏幕。\n显示事件日志\n使用此菜单选项可查看 UPS 事件日志。UPS 记录最后 10 个事件和并在此日志中显示代\n码。\n按确认按钮可查看日志。使用向上/向下按钮可查看记录的事件。向下按钮导航至旧事件，\n向上\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第14页，块03]\n下按钮浏览参数。\n5. 按确认按钮编辑参数。图标开始闪烁指示编辑。\n6. 按向上/向下按钮浏览可用于所选参数的选项。\n7. 按确认按钮选择选项或按静音/ESC 按钮终止当前参数的编辑。图标闪烁此后停止。\n8. 按向上/向下按钮导航至不同的参数。\n9. 按静音/ESC 按钮退出菜单导航。\n\n",
+    "context_characters": 816,
+    "answer": "查看更早的事件按**向下按钮**，查看更新的事件按**向上按钮**。原文：“向下按钮导航至旧事件，向上按钮导航至新事件。”（EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第16页，块02）",
+    "status": "ok",
+    "top_k": 3,
+    "retrieval_method": "char_tfidf_and_semantic_rrf",
+    "candidate_k": 8,
+    "reference_page_hit": true,
+    "retrieval_code_sha256": "3a47da9bd5b041857d1e1041f7e7f0343af8c0ecf3bd3db222d5b8a4da6e9ad1",
+    "review": "通过：向下查看旧事件、向上查看新事件，回答与第16页块02一致。"
+  },
+  {
+    "id": "U05",
+    "question": "这台UPS今天在苏州经销商处的售价是多少元？",
+    "expected": "资料未提供；静态手册无法证明当天当地的售价，不应编造金额。",
+    "expected_pages": [],
+    "retrieved": [
+      {
+        "text": "UPS 设置\n使用显示界面配置 UPS 设置。请参阅“配置 UPS 参数”章节以编辑参数。\n功能 出厂默认设置 用户可选择的选项 说明\n输出电压 230 VAC 220、230、240 VAC 允许用户在 UPS 在线操作时选择输出\n电压。\n声音报警 启用 启用、禁用 当设置为“禁用”或按下静音按钮时，\nUPS 的声音警报将静音。\n绿色模式/高效\n率模式\n禁用 启用/禁用 当此模式启用时，只要输入电压处于\n所配置输出电压的±5%范围内，和所\n配置输出频率的±3 Hz 范围内，所连\n设备即会通过旁路继电器接收市电输",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第15页，块01",
+        "pdf_page": 15,
+        "chunk_id": "p15-c01",
+        "score": 0.031754032258064516,
+        "keyword_score": 0.037147819583861603,
+        "semantic_score": 0.49704787135124207,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "开。\n如果配置为 0%，则在市电恢复后，\nUPS 输出立即打开。\n电池电量不足状\n态指示设置\n2 分钟 2 分钟、5 分钟、7 分钟、\n10 分钟\n当实际运行时间达到用户设置的限制\n时，UPS 将发出声音警报。仅当 UPS\n在电池模式下工作时声音警报才会发\n出。",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第15页，块03",
+        "pdf_page": 15,
+        "chunk_id": "p15-c03",
+        "score": 0.03131881575727918,
+        "keyword_score": 0.032860948268381124,
+        "semantic_score": 0.5080174207687378,
+        "score_type": "reciprocal_rank_fusion"
+      },
+      {
+        "text": "每个电池模块的电压 24 V 48 V 72 V\nUPS 的总电压 24 V 48 V 72 V\nAh 额定值 每个电池模块 9 Ah\n注释：\n请参阅适用的电池更换用户手册，以了解安装说明。\n请联系经销商或转到 APC by Schneider Electric 网站 www.apc.com 了解有关更换电池的信息。\n前面板显示器\n UPS 电源开/关按钮\n 警报 LED\n 向上/向下按钮\n 确认按钮\n 静音/ESC 按钮\n LCD 显示屏\n 状态指示灯",
+        "source": "EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第6页，块02",
+        "pdf_page": 6,
+        "chunk_id": "p06-c02",
+        "score": 0.031099324975891997,
+        "keyword_score": 0.08770142057626248,
+        "semantic_score": 0.4624595046043396,
+        "score_type": "reciprocal_rank_fusion"
+      }
+    ],
+    "context": "[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第15页，块01]\nUPS 设置\n使用显示界面配置 UPS 设置。请参阅“配置 UPS 参数”章节以编辑参数。\n功能 出厂默认设置 用户可选择的选项 说明\n输出电压 230 VAC 220、230、240 VAC 允许用户在 UPS 在线操作时选择输出\n电压。\n声音报警 启用 启用、禁用 当设置为“禁用”或按下静音按钮时，\nUPS 的声音警报将静音。\n绿色模式/高效\n率模式\n禁用 启用/禁用 当此模式启用时，只要输入电压处于\n所配置输出电压的±5%范围内，和所\n配置输出频率的±3 Hz 范围内，所连\n设备即会通过旁路继电器接收市电输\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第15页，块03]\n开。\n如果配置为 0%，则在市电恢复后，\nUPS 输出立即打开。\n电池电量不足状\n态指示设置\n2 分钟 2 分钟、5 分钟、7 分钟、\n10 分钟\n当实际运行时间达到用户设置的限制\n时，UPS 将发出声音警报。仅当 UPS\n在电池模式下工作时声音警报才会发\n出。\n\n[EasyUPS_SRV_Chinese_990-91063B.pdf，PDF第6页，块02]\n每个电池模块的电压 24 V 48 V 72 V\nUPS 的总电压 24 V 48 V 72 V\nAh 额定值 每个电池模块 9 Ah\n注释：\n请参阅适用的电池更换用户手册，以了解安装说明。\n请联系经销商或转到 APC by Schneider Electric 网站 www.apc.com 了解有关更换电池的信息。\n前面板显示器\n UPS 电源开/关按钮\n 警报 LED\n 向上/向下按钮\n 确认按钮\n 静音/ESC 按钮\n LCD 显示屏\n 状态指示灯\n\n",
+    "context_characters": 778,
+    "answer": "资料未提供。手册摘录只涉及 UPS 设置、电池电压/容量和前面板说明，没有苏州经销商售价信息。",
+    "status": "ok",
+    "top_k": 3,
+    "retrieval_method": "char_tfidf_and_semantic_rrf",
+    "candidate_k": 8,
+    "reference_page_hit": null,
+    "retrieval_code_sha256": "3a47da9bd5b041857d1e1041f7e7f0343af8c0ecf3bd3db222d5b8a4da6e9ad1",
+    "review": "通过：资料没有提供当天苏州经销商的售价，模型没有编造金额。"
+  }
+]
